@@ -1,0 +1,416 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'montserrat';
+    
+
+}
+
+@font-face {
+    font-family: 'Author';
+    src: url(./Font/Author-Semibold.ttf);
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(./Font/Montserrat-Medium.ttf);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+     
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+/* -----------------------------Navigation Area Start --------------------------------*/
+#logo{
+    position: relative;
+    width: 20%;
+    left: 0%;
+}
+
+#page1>#nav{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-between; */
+    position: absolute;
+    /* padding: 0px 30px; */
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(31, 241, 241); */
+    z-index: 9;
+
+   
+}
+#center-nav{
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    left: 22%;
+    text-transform: uppercase;
+    font-family: 'montserrat';
+   
+}
+#center-nav>a{
+    text-decoration: none;
+    color: #413201;
+    font-weight: 600;
+    font-size: 18px;
+    /* margin: 0 2px; */
+    transition: all ease .50s;
+}
+#center-nav a:hover{
+    color: #E63946;
+    transform:translateY(4px);
+    text-decoration: overline;
+    /* background-color: #dadada; */
+    /* text-shadow: 4px 4px  #c1c1bf ; */
+}
+#center-nav a.active{
+    color: rgb(8, 130, 183) ;
+}
+
+#nav>#center-nav>input{
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #058590;
+    text-transform: uppercase;
+    left: 5%;
+}
+.menu-btn{
+    font-size: 20px;
+}
+
+
+/* -----------------------------Navigation Area End --------------------------------*/
+
+#page1>img{
+    position: absolute;
+    right: 10%;
+    top: 14%;
+    transform: translateY(-2%);
+    width: 40%;
+}
+
+#text{
+    padding: 30px 50px;
+    position: relative;
+    top: 22%;
+    left: 12%;
+    height: 60%;
+    width: 35%;
+    transform: scale(1.2);
+    font-family:'montserrat';
+}
+
+#text>h1{
+    font-size: 75px;
+    line-height: 1;
+}
+#text>h4{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+#text>h5{
+    color:#00a1ab;
+}
+
+#buttons{
+    position: relative;
+    left: -13%;
+    top: 5%;
+    height: 20%;
+    width: 110%;
+    scale: 85%;
+    
+}
+#buttons>a{
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    color: black;
+}
+#buttons>a>i{
+    font-size: 20px;
+}
+#buttons>#btn{
+    font-size: 16px;
+    margin-left: 18px;
+    background-color: #fcda69;
+    display: inline-block;
+    border: 1.5px solid ;
+    font-weight: 530;
+    transition: all 0.3s ease-in-out;
+}
+#buttons>#btn:hover{
+    transform: translateY(5px);
+    background: transparent;
+    color: white;
+    background-color: #058590;
+
+}
+
+/* -------------------- My Social Media Follow Bottons -------------------- */
+.wrapper{
+    position: relative;
+    left: 52%;
+    top: 28%;
+    /* background-color: #fcda69; */
+    transform: scale(0.8);
+    
+}
+.wrapper a{
+    color: black;
+}
+
+.wrapper .social-btn{
+    display:inline;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #fff;
+    /* background-color: #91edf6; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.wrapper .social-btn:hover{ 
+    width: 200px;
+
+}
+
+.wrapper .social-btn .icon{
+    display:inline-block;
+    /* background-color: #aceef4; */
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.4s ease-in-out;
+
+}
+.wrapper .social-btn:nth-child(1):hover .icon{
+    background-color: #e51b05;
+}
+.wrapper .social-btn:nth-child(2):hover .icon{
+    background-color: #e1306c;
+}
+.wrapper .social-btn:nth-child(3):hover .icon{
+    background-color: #1da1f2;
+}
+.wrapper .social-btn:nth-child(4):hover .icon{
+    background-color: #4267b2;
+}
+.wrapper .social-btn:nth-child(5):hover .icon{
+    background-color: #333;
+}
+
+.wrapper .social-btn .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.2s ease-in-out;
+}
+
+.wrapper .social-btn:hover .icon i{
+    color: #fff;
+}
+
+
+.wrapper .social-btn span{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+/* -------------------- My Social Media Follow Bottons End -------------------- */
+
+/*-------------------------------- Page 1 End ---------------------------- */
+#page2{
+    /* color: #fed500; */
+    color: white;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #015bbb;   */
+    /* #058590;  #048d99 */
+    font-family: 'montserrat';
+    background: linear-gradient(to top left, #00a1ab, #013b41);
+}
+#page2>#about{
+    width: 48%;
+    height: 50%;
+    padding-top: 3%;
+    padding-right: 2%;
+    left: 4%;
+    font-size: 50px;
+    padding-left: 35px;
+    
+    
+    
+}
+#about>h6{
+    font-size: 16px;
+    position: relative;
+    top: -8%;
+    font-weight: 450;
+}
+#about2{
+    height: 50%;
+    width: 45%;
+    padding-bottom: 04%;
+    padding-right: 2%;
+    position: absolute;
+    right: 2%;
+    bottom: 7%;
+    font-size: 30px;
+}
+#about2>h6{
+    font-size: 16px;
+    position: relative;
+    top: -5%;
+    font-weight: 450;
+}
+.signature {
+    height: 80px;
+    position: absolute;
+    right: 8%;
+    bottom: 5%;
+    transform: rotate(-14deg);
+}
+
+#strip1{
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    height: 30%;
+    width: 50%;
+    color: #025259;
+    background-color: white;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#strip1>#s1text1{
+    font-size: 16px;
+    position: absolute;
+    right: 82%;
+    top: 7%;
+}
+#strip1pic {
+    position: absolute;
+    float: right;
+    top: 7%;
+    left: 18%;
+    height: 210px;
+}
+#strip1>#s1text2{
+    font-size: 16px;
+    position: absolute;
+    right: 4%;
+    top: 60%;
+}
+
+
+#strip2{
+    position: absolute;
+    left: 0%;
+    /* top: 69%; */
+    bottom: 8%;
+    height:30%;
+    width: 50%;
+    color: black;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#strip2>#s2text1{
+    font-size: 16px;
+    position: absolute;
+    right: 4%;
+    top: 9%;
+}
+#strip2pic{
+    position: absolute;
+    height: 206px;
+    /* float: left; */
+    bottom: 7%;
+    right: 18.5%;
+}
+#strip2>#s2text2{
+    font-size: 16px;
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    text-align: right;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #013b41, #00a1ab);
+    
+   
+}
+.skills{
+ font-size: 80px;
+ position: relative;
+ color: white;
+ text-align: center;
+ 
+ 
+}
+
+.tech{
+    position: absolute;
+    background-color: white;
+    height: 76%;
+    width: 40%;
+    top: 18%;
+    left: 8%;
+    text-align:center;
+    line-height: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px  3px 2px #8e8e8d ;
+}
+.soft{
+    position: absolute;
+    background-color: white;
+    height: 76%;
+    width: 40%;
+    top: 18%;
+    right: 9%;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px  3px 2px #8e8e8d ;
+    
+}
