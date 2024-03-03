@@ -380,19 +380,19 @@ html,body{
     
    
 }
-.skills{
+/* .skills{
  font-size: 80px;
  position: relative;
  color: white;
  text-align: center;
  
  
-}
+} 
 
 .tech{
     position: absolute;
     background-color: white;
-    height: 76%;
+    height: 53%;
     width: 40%;
     top: 18%;
     left: 8%;
@@ -400,11 +400,12 @@ html,body{
     line-height: 70px;
     border-radius: 15px;
     box-shadow: 0px 0px  3px 2px #8e8e8d ;
+    font-size: 20px;
 }
 .soft{
     position: absolute;
     background-color: white;
-    height: 76%;
+    height: 53%;
     width: 40%;
     top: 18%;
     right: 9%;
@@ -412,5 +413,55 @@ html,body{
     line-height: 70px;
     border-radius: 15px;
     box-shadow: 0px 0px  3px 2px #8e8e8d ;
+    font-size: 20px;
+    
+} */
+
+/* ------------------- My Skills Page ----------------------- */
+
+.skills{
+    color: white;
+}
+
+.main-text{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.main-text p{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.main-text h2{
+    font-size: 45px;
+    line-height: 1;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
+}
+.box{
+    background-color: #00a1ab;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.box:hover{
+    transform: scale(1.1);
+    color: #048591;
+    background-color: white;
+}
+
+.s-icons i{
+    font-size: 32px;
+    margin-bottom: 15px;
     
 }
