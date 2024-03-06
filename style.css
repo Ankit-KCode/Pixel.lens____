@@ -37,9 +37,16 @@ html,body{
 }
 
 /* -----------------------------Navigation Area Start --------------------------------*/
+@media screen and (max-width: 991px) {
+    #center-nav{
+        display:none !important; 
+    }
+}
+
+
 #logo{
     position: relative;
-    width: 20%;
+    width: 250px;
     left: 0%;
 }
 
@@ -85,15 +92,22 @@ html,body{
     color: rgb(8, 130, 183) ;
 }
 
-#nav>#center-nav>input{
+.search-bar{
+    position: absolute;
+    right: 10%;
+}
+.search-bar>input{
     padding: 6px 8px;
     border-radius: 8px;
     border: 1px solid #058590;
     text-transform: uppercase;
-    left: 5%;
+    margin-right: 10px;
 }
-.menu-btn{
-    font-size: 20px;
+.menu-bar{
+    position: absolute;
+    right: 3%;
+    font-size: 35px
+    
 }
 
 
@@ -447,7 +461,7 @@ html,body{
     gap: 2.5rem;
     margin-top: 5rem;
     margin-left: 2rem;
-    margin-right: 2.5rem;
+    margin-right: 2rem;
 
 }
 .box{
