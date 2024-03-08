@@ -43,11 +43,17 @@ html,body{
     }
     #page1>img{
         position: absolute;
-        top: 25+%!important;
+        top: 25%!important;
     }
     #text{
         transform: translateX(-70px) !important;
         /* transform: scale(1.2); */
+    }
+
+    .wrapper{
+        position: relative;
+        left: 1% !important ;
+        top: 12% !important ;
     }
 }
 
@@ -124,7 +130,7 @@ html,body{
 #page1>img{
     position: absolute;
     right: 10%;
-    top: 14%;
+    top: 18%;
     transform: translateY(-2%);
     width: 40%;
 }
@@ -195,8 +201,8 @@ html,body{
 /* -------------------- My Social Media Follow Bottons -------------------- */
 .wrapper{
     position: relative;
-    left: 52%;
-    top: 28%;
+    left: 4%;
+    top: 24%;
     /* background-color: #fcda69; */
     transform: scale(0.8);
     
@@ -292,7 +298,7 @@ html,body{
 }
 #page2>#about{
     width: 48%;
-    height: 50%;
+    height: 45%;
     padding-top: 3%;
     padding-right: 2%;
     left: 4%;
@@ -336,8 +342,8 @@ html,body{
     position: absolute;
     right: 0%;
     top: 8%;
-    height: 30%;
-    width: 50%;
+    height: 260px;
+    width: 750px;
     color: #025259;
     background-color: white;
     /* border-radius: 10px; */
@@ -353,7 +359,7 @@ html,body{
 #strip1pic {
     position: absolute;
     float: right;
-    top: 7%;
+    top: 10%;
     left: 18%;
     height: 210px;
 }
@@ -370,8 +376,8 @@ html,body{
     left: 0%;
     /* top: 69%; */
     bottom: 8%;
-    height:30%;
-    width: 50%;
+    height: 260px;
+    width: 750px;
     color: black;
     background-color: white;
     border-top-right-radius: 10px;
@@ -387,7 +393,7 @@ html,body{
     position: absolute;
     height: 206px;
     /* float: left; */
-    bottom: 7%;
+    bottom: 10%;
     right: 18.5%;
 }
 #strip2>#s2text2{
@@ -441,7 +447,7 @@ html,body{
 #page3{
     position: relative;
     height: 120%;
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(to top right, #013b41, #00a1ab);
     padding-bottom: 60px;
     flex-wrap: wrap;
