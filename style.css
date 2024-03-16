@@ -36,7 +36,9 @@ html,body{
     background-color: white;
 }
 
-/* -----------------------------Navigation Area Start --------------------------------*/
+/* -----------------------------Media Query Start --------------------------------*/
+
+
 @media screen and (max-width: 991px) {
     #center-nav{
         display:none !important; 
@@ -53,10 +55,38 @@ html,body{
     .wrapper{
         position: relative;
         left: 1% !important ;
-        top: 12% !important ;
+        top: 18% !important ;
     }
-}
 
+    #page2{
+        height: 100%;
+        width: 100%;
+    }
+    #strip1{
+        position:absolute;
+        top: 0% !important;
+        right: -12% !important;
+        transform: scale(0.7);
+    }
+
+    #strip2{
+        position:absolute;
+        bottom: 0% !important;
+        left: -12% !important;
+        transform: scale(0.7);
+    }
+    #about2{
+        position: absolute;
+        right: 0.5% !important;
+        bottom: 16% !important;
+    }
+    
+
+}
+/* -----------------------------Media Query End --------------------------------*/
+
+
+/* -----------------------------Navigation Area Start --------------------------------*/
 
 #logo{
     position: relative;
