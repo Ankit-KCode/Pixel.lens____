@@ -30,57 +30,7 @@ html,body{
      
 }
 
-/* -----------------------------Media Query Start --------------------------------*/
-
-/* @media screen and (max-width: 991px) {
-    #center-nav{
-        display:none !important; 
-    }
-    #page1>img{
-        position: absolute;
-        top: 25%!important;
-    }
-    #text{
-        transform: translateX(-70px) !important;
-        /* transform: scale(1.2); */
-    /* } */
-
-    /* .wrapper{
-        position: relative;
-        left: 1% !important ;
-        top: 18% !important ;
-    }
-
-    #page2{
-        height: 100%;
-        width: 100%;
-    }
-    #strip1{
-        position:absolute;
-        top: 0% !important;
-        right: -12% !important;
-        transform: scale(0.7);
-    }
-
-    #strip2{
-        position:absolute;
-        bottom: 0% !important;
-        left: -12% !important;
-        transform: scale(0.7);
-    }
-    #about2{
-        position: absolute;
-        right: 0.5% !important;
-        bottom: 16% !important;
-    }
-    
-
-} */ 
-
-
-
-
-/* -----------------------------Media Query End --------------------------------*/
+/* ----------------------------- Main Content Page Start --------------------------------*/
 
 
 #page1{
@@ -267,9 +217,10 @@ html,body{
 
 /* -------------------- My Social Media Follow Bottons -------------------- */
 .wrapper{
-    position: relative;
+    position: absolute;
     left:100px ;
-    top: 235px;
+    top: 710px;
+    width: 100%;
     /* background-color: #fcda69; */
     transform: scale(0.8);
     
@@ -384,15 +335,21 @@ html,body{
     }
 
     .wrapper{
-        position: relative;
-        left:5px ;
-        top: 300px;
+        position: absolute;
+        left:-20px ;
+        bottom: 20px;
+        /* padding-left: 20px; */
         /* background-color: #fcda69; */
         transform: scale(0.6);
+        width: 500px;
     }
     #buttons>#btn{
         margin-right: 6px;
         transform: translateY(-15px);
+    }
+    
+    #buttons>#btn:hover{
+        transform: translateY(-14px);
     }
 
 }
@@ -528,8 +485,8 @@ html,body{
     }
     #strip1{
         transform: scale(0.5);
-        left: -46%;
-        top: -5%;
+        left: -42%;
+        top: -4.4%;
     }
     
     #page2>#about{
@@ -549,7 +506,7 @@ html,body{
 
     #strip2{
         transform: scale(0.5);
-        left: -50%;
+        left: -48%;
         bottom: 35%;
     }
     #about2{
@@ -617,7 +574,7 @@ html,body{
 /* ------------------- My Skills Page ----------------------- */
 #page3{
     position: relative;
-    height: 120%;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to top right, #013b41, #00a1ab);
     padding-bottom: 60px;
@@ -644,19 +601,24 @@ html,body{
 
 .skill-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem;
+    gap: 25px;
+    /* margin-top: 5rem;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 2rem; */
+    /* margin: 4%; */
+    padding: 22px;
 
 }
 .box{
+    box-shadow: 0 3px 5px rgb(37, 36, 36);
     background-color: #00a1ab;
-    padding: 35px 45px;
-    border-radius: 8px;
+    padding: 30px 40px;
+    /* margin: 10%; */
+    border-radius: 6px;
     transition: all 0.3s ease-in-out;
+    text-align: center;
     
 }
 .box:hover{
@@ -666,26 +628,25 @@ html,body{
 }
 
 .s-icons i{
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 15px;
     
 }
 
+@media (max-width:390px) {
+    .skills{
+        /* padding: 20px; */
+        
+    }
+    .skill-content{
+        /* padding-right: -30px; */
+    }
+    
+}
 
   /*-------------------------------- Page 3 End ------------------------------- */
 
   /*-------------------------------- Page 4 Start - Contact Page ------------------------------- */
-  
-  @media screen and (max-width:880px) {
-    .contact-box{
-        grid-template-columns: 1fr;
-    }
-
-    .left{
-        height: 200px;
-    }
-    
-  }
 
   .page4{
     height: 100vh;
@@ -800,3 +761,15 @@ html,body{
     background-color: #0a883e;
   }
 
+  @media screen and (max-width:880px) {
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        height: 200px;
+    }
+    
+  }
+
+  
