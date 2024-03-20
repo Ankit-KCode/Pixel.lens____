@@ -44,76 +44,120 @@ html,body{
 
 
 /* -----------------------------Navigation Area Start --------------------------------*/
-
-#logo{
-    /* position: relative; */
-    width: 18vw;
-    left: 0%;
-}
-
-#page1>#nav{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    position: absolute;
-    padding: 0px 1vw;
-    height: 70px;
+.nav-bar{
     width: 100%;
-    background-color: white;
-    z-index: 9;
-    border-bottom: 2px solid #dadada;
-
-   
-}
-#center-nav{
+    height: 70px;
     display: flex;
-    position: relative;
-    gap: 3vw;
-    /* justify-content: space-between; */
-    left: 33%;
-    text-transform: uppercase;
-    font-family: 'montserrat';
+    justify-content: space-between;
     align-items: center;
-   
-}
-#center-nav>a{
-    text-decoration: none;
-    color: #413201;
-    font-weight: 600;
-    font-size: 1.5vw;
-    /* margin: 0 2px; */
-    transition: all ease .50s;
-}
-#center-nav a:hover{
-    color: #E63946;
-    transform:translateY(4px);
-    text-decoration: overline;
-    /* background-color: #dadada; */
-    /* text-shadow: 4px 4px  #c1c1bf ; */
-}
-#center-nav a.active{
-    color: rgb(8, 130, 183) ;
+    list-style: none;
+    position: relative;
+    background-color: white;
+    padding: 12px 20px;
+    border-bottom: 2px solid #dadada;
 }
 
-.search-bar{
+.logo img{
+    width: 200px;
     position: relative;
-    right: 28%;
+    left: -15px;
 }
-.search-bar>input{
-    padding: 6px 8px;
-    border-radius: 8px;
-    border: 1px solid #058590;
+
+.menu{
+    display: flex;
+    padding-right: 20px;
+}
+
+.menu li{
+    padding-left: 30px;
+    /* padding-right: 30px; */
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
     text-transform: uppercase;
-    margin-right: 10px;
+    transition: 0.15s ease-in-out;
+    font-weight: 700;
 }
-.menu-bar{
-    /* position: absolute; */
-    right: 30%;
-    font-size: 2.6vw
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(231, 49, 40);
+    transition: 0.15s ease-in-out;
+    
+}
+.menu li a:hover:after {
+    width: 100%;
     
 }
 
-@media (max-width:600px) {
+.open-menu , .close-menu{
+    position: absolute;
+    color: rgb(60, 59, 59);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu{
+    top: 36px;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 35px;
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+}
+#check{display: none;}
+
+@media(max-width: 680px){
+    
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #00a1ab;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 1px 10px rgb(37, 36, 36);
+        
+    }
+
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        color: white;
+        padding: 10px;
+    }
+
+    .open-menu , .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+}
+
+/* Older nav in nav css file */
+
+/* @media (max-width:600px) {
     #logo{
         width: 45vw;
     }
@@ -131,7 +175,7 @@ html,body{
     }
 
     
-}
+} */
 
 
 /* -----------------------------Navigation Area End --------------------------------*/
@@ -153,7 +197,7 @@ html,body{
 #text{
     padding: 3vw 5vw;
     position: relative;
-    top: 22%;
+    top: 12%;
     left: 12%;
     height: 60%;
     width: 35%;
@@ -187,9 +231,7 @@ html,body{
     scale: 85%;
     
 }
-/* #buttons>a{
-   
-} */
+
 #buttons>a>i{
     font-size: 1.5vw;
 }
@@ -218,7 +260,7 @@ html,body{
 /* -------------------- My Social Media Follow Bottons -------------------- */
 .wrapper{
     position: absolute;
-    left:100px ;
+    left:100px;
     top: 710px;
     width: 100%;
     /* background-color: #fcda69; */
@@ -299,14 +341,14 @@ html,body{
     .front-content>img{
         position: relative;
         left: 15%;
-        top: 8%;
+        top: 2%;
         width: 70%;
     }
 
     #text{
         padding: 1vw 2vw;
         position: relative;
-        top: 25%;
+        top: 18%;
         left: 30%;
         height: 22%;
         width: 35%;
@@ -337,7 +379,7 @@ html,body{
     .wrapper{
         position: absolute;
         left:-20px ;
-        bottom: 20px;
+        bottom: -190px;
         /* padding-left: 20px; */
         /* background-color: #fcda69; */
         transform: scale(0.6);
@@ -633,16 +675,6 @@ html,body{
     
 }
 
-@media (max-width:390px) {
-    .skills{
-        /* padding: 20px; */
-        
-    }
-    .skill-content{
-        /* padding-right: -30px; */
-    }
-    
-}
 
   /*-------------------------------- Page 3 End ------------------------------- */
 
@@ -772,4 +804,4 @@ html,body{
     
   }
 
-  
+
