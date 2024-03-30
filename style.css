@@ -222,6 +222,61 @@ html,body{
     
 }
 
+
+/* --------------- Dynamic Sub-Text Start ---------------- */
+.sub-text{
+    display: flex;
+
+}
+
+.static-text{
+    width: 40px;
+}
+.sub-text .dynamic-text{
+    overflow: hidden;
+    height: 22px;
+    
+
+}
+
+
+.dynamic-text li{
+    list-style: none;
+    color: #035e64;
+    font-size: 18px;
+    font-weight: 1000;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(2) infinite;
+
+}
+@keyframes slide {
+    100% {
+        top: -45px;
+    }
+}
+
+
+.dynamic-text li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #013b41;
+    background-color: white;
+    animation:typing 3s steps(25) infinite;
+}
+@keyframes typing {
+    40%,
+    60% {
+            left: calc(100% + 5px);
+        }
+    
+}
+
+/* --------------- Dynamic Sub-Text End ---------------- */
+
 #buttons{
     position: relative;
     left: -10%;
@@ -357,7 +412,8 @@ html,body{
     }
 
     #text>h1{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        font-size: 30px;
     }
 
     #text>h4{
@@ -392,6 +448,30 @@ html,body{
     
     #buttons>#btn:hover{
         transform: translateY(-14px);
+    }
+    
+    /* ------Dynamic Sub-Text Query------ */
+
+    .sub-text{
+        display: block;
+        margin-left: 18px;
+    }
+    .sub-text .dynamic-text{
+        
+        height: 8px;
+    }
+    .static-text{
+        font-size: 5px;
+    }
+
+    .dynamic-text li{
+        font-size: 6px;
+        animation: slide 6s steps(2) infinite;
+    }
+    @keyframes slide {
+        100% {
+            top: -15px;
+        }
     }
 
 }
