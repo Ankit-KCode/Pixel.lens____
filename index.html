@@ -56,13 +56,13 @@
                 <div id="text">
                     <h5>Welcome</h5>
                     <h1>Hello ! <br>I am <br>Ankit</h1>
-                  <div class="sub-text">
-                    <div class="static-text">I'Am </div>
-                    <ul class="dynamic-text">
-                        <li><span>Computer Science Student.</span></li>
-                        <li><span>A Content Creator.</span></li>
-                    </ul>
-                 </div>
+                    <div class="sub-text">
+                        <div class="static-text">I'Am </div>
+                        <ul class="dynamic-text">
+                            <li><span>Computer Science Student.</span></li>
+                            <li><span>A Content Creator.</span></li>
+                        </ul>
+                    </div>
                     <!-- <h4>____I Am Computer Science Student & A Content Creator.</h4> -->
                     <div id="buttons">
                         <a href="#" id="btn"><i class="ri-navigation-line"></i>LET'S SOCIAL</i></a>
@@ -256,18 +256,21 @@
         </div>
 
         <div id="Contact" class="page4">
-            <div class="contact-box">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-box">
                 <div class="left"> </div>
                 <div class="right">
                     <h2>Contact Me</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="email" class="field" placeholder="abc@gmail.com">
-                    <input type="text" class="field" placeholder="Your Phone">
-                    <textarea class="area" placeholder="Message....."></textarea>
+
+                    <input type="hidden" name="access_key" value="2e1ec377-d5ac-4a51-9b9c-9e703a5113b0">
+
+                    <input type="text" name="name" class="field" placeholder="Your Name">
+                    <input type="email" name="email" class="field" placeholder="abc@gmail.com">
+                    <input type="text" name="mobile" class="field" placeholder="Your Phone">
+                    <textarea class="area" name="message" placeholder="Message....."></textarea>
                     <button class="btn">Send</button>
 
                 </div>
-            </div>
+            </form>
         </div>
         <footer class="footer">
             <div>
