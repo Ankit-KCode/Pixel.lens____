@@ -55,6 +55,8 @@ html,body{
     background-color: white;
     padding: 12px 20px;
     border-bottom: 2px solid #dadada;
+    position: fixed;
+    z-index: 10;
 }
 
 .logo img{
