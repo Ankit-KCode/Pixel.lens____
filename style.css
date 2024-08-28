@@ -887,7 +887,15 @@ html,body{
   }
 
 footer{
-    height: 40vh;
+    height: 24vh;
     width: 100%;
     background-color: #00a1ab;
+}
+
+.watermark{
+    height: 400px;
+    position: relative;
+    left: 77%;
+    bottom: 94px;
+
 }
