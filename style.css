@@ -760,7 +760,155 @@ html,body{
 
   /*-------------------------------- Page 3 End ------------------------------- */
 
-  /*-------------------------------- Page 4 Start - Contact Page ------------------------------- */
+
+
+
+
+  /*-------------------------------- Page 4 Start ------------------------------- */
+
+
+#page4 {
+    max-width: 100vw;
+    height: 150vh;
+    background-color: #ffffff;
+    /* background-image: linear-gradient(to right bottom, #035e64, #037e85, #05a0a6, #09c3c8, #12e7eb); */
+    padding: 2rem 4rem;
+    /* margin: 10px 20px; */
+    /* position: relative; */
+}
+
+.head_container{
+    margin-bottom: 2.8rem;
+}
+
+.head_title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.head_desc{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card_container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(2, 165, 125, 0.653);
+    border-radius: 10px;
+    /* box-shadow: rgba(2, 165, 125, 0.653) 0px 0px 0px 3px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.img_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card1_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card1_titleBox{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.card1:hover .card1_image{
+    transform: scale(1.2);
+    transition-duration: 150ms;
+}
+
+.card1_title{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: rgb(39, 28, 28);
+}
+
+.card1_title:hover{
+    color: #00a1ab;
+    transition-duration: 150ms;
+}
+
+.card1_desc{
+    color: rgb(30, 30, 30);
+    font-size: 1rem;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.info_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project_logo{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.project_logo_container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    
+}
+
+.info_data{
+    display: flex;
+    flex-direction: column;
+}
+
+.info_data span:nth-child(1){
+    color: #00a1ab;
+    font-weight: 800;
+}
+
+.info_data span:nth-child(2){
+    font-size: 0.8rem;
+    /* font-weight: 800; */
+}
+
+.project_tag{
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+
+
+
+  /*-------------------------------- Start - Contact Page ------------------------------- */
 
   .page4{
     height: 100vh;
