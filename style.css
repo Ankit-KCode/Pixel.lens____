@@ -768,13 +768,12 @@ html,body{
 
 
 #page4 {
-    max-width: 100vw;
-    height: 150vh;
+    max-width: 100%;
+    height: 100%;
     background-color: #ffffff;
     /* background-image: linear-gradient(to right bottom, #035e64, #037e85, #05a0a6, #09c3c8, #12e7eb); */
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     /* margin: 10px 20px; */
-    /* position: relative; */
 }
 
 .head_container{
@@ -798,8 +797,22 @@ html,body{
 .card_container{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
+
+@media (min-width:750px) {
+    .card_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1080px) {
+    .card_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 
 .card1{
     background-color: white;
@@ -809,6 +822,7 @@ html,body{
     border-radius: 10px;
     /* box-shadow: rgba(2, 165, 125, 0.653) 0px 0px 0px 3px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    overflow: hidden;
 }
 
 .img_container{
@@ -910,7 +924,7 @@ html,body{
 
   /*-------------------------------- Start - Contact Page ------------------------------- */
 
-  .page4{
+  .page5{
     height: 100vh;
     width: 100vw;
     /* background: linear-gradient(to top right,  #00a1ab,  #013b41 ); */
@@ -921,7 +935,7 @@ html,body{
     padding: 20px 100px;
   }
 
-  .page4::after{
+  .page5::after{
     content: '';
     position: absolute;
     left: 0;
