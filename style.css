@@ -51,7 +51,6 @@ html,body{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    position: relative;
     background-color: white;
     padding: 12px 20px;
     border-bottom: 2px solid #dadada;
@@ -128,7 +127,7 @@ html,body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 60%;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -494,6 +493,7 @@ html,body{
     /* #058590;  #048d99 */
     font-family: 'montserrat';
     background: linear-gradient(to top left, #00a1ab, #013b41);
+    
 }
 #page2>#about{
     width: 48%;
@@ -706,6 +706,8 @@ html,body{
 }
 .skills{
     color: white;
+    padding-top: 95px;
+    padding-right: 10px;
 }
 
 .main-text{
@@ -733,7 +735,8 @@ html,body{
     margin-right: 2rem; */
     /* margin: 4%; */
     padding: 22px;
-
+    justify-content: center;
+    
 }
 .box{
     box-shadow: 0 3px 5px rgb(37, 36, 36);
@@ -743,6 +746,7 @@ html,body{
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
     text-align: center;
+    
     
 }
 .box:hover{
@@ -773,6 +777,8 @@ html,body{
     /* background-color: #f6f6f6; */
     /* background-image: linear-gradient(to right bottom, #035e64, #037e85, #05a0a6, #09c3c8, #12e7eb); */
     padding: 2rem 3rem;
+    padding-top: 75px;
+    padding-bottom: 80px;
     /* margin: 10px 20px; */
 
     background: linear-gradient(83deg,#048591,#06b5b5,#039090,#07abbc,#292d2d);
@@ -818,10 +824,13 @@ html,body{
 .card_container{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 400px));
+    justify-content: center;
 }
 
-@media (min-width:750px) {
+
+/* @media (min-width:750px) {
     .card_container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -833,7 +842,7 @@ html,body{
         padding: 0rem 1.2rem;
 
     }
-}
+} */
 
 
 
@@ -841,19 +850,23 @@ html,body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid rgba(2, 165, 125, 0.653); */
     border-radius: 10px;
-    /* box-shadow: rgba(2, 165, 125, 0.653) 0px 0px 0px 3px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     overflow: hidden;
+    border: 5px solid white;
+    transition: all 150ms ease-in-out;
+
+}
+
+.card1:hover{
+    transform: scale(1.05);
 }
 
 .img_container{
     position: relative;
     overflow: hidden;
     height: 14rem;
-    border: 5px solid white;
-    
+    border-radius: 7px 7px 0px 0px;
 }
 
 .card1_image{
@@ -863,6 +876,11 @@ html,body{
     height: 100%;
     width: 100%;
     border-radius: 7px;
+    transition: all 150ms ease-in-out;
+}
+
+.card1:hover .card1_image{
+    transform: scale(1.2);
 }
 
 .card1_titleBox{
@@ -871,11 +889,6 @@ html,body{
     padding: 1.1rem;
 }
 
-.card1:hover .card1_image{
-    transform: scale(1.2);
-    transition-duration: 150ms;
-    border-radius: 7px 7px 0px 0px;
-}
 
 .card1_title{
     font-size: 1.2rem;
