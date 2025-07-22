@@ -770,10 +770,28 @@ html,body{
 #page4 {
     max-width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    /* background-color: #f6f6f6; */
     /* background-image: linear-gradient(to right bottom, #035e64, #037e85, #05a0a6, #09c3c8, #12e7eb); */
     padding: 2rem 3rem;
     /* margin: 10px 20px; */
+
+    background: linear-gradient(83deg,#048591,#06b5b5,#039090,#07abbc,#292d2d);
+    background-size: 300% 300%;
+    animation: gradient-animation 20s ease infinite;
+
+  
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .head_container{
@@ -786,12 +804,15 @@ html,body{
     font-weight: 800;
     line-height: 2rem;
     text-align: center;
+    color: white;
 }
 
 .head_desc{
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
+    color: white;
+
 }
 
 .card_container{
@@ -809,6 +830,8 @@ html,body{
 @media (min-width:1080px) {
     .card_container{
         grid-template-columns: repeat(3, 1fr);
+        padding: 0rem 1.2rem;
+
     }
 }
 
@@ -818,7 +841,7 @@ html,body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgba(2, 165, 125, 0.653);
+    /* border: 2px solid rgba(2, 165, 125, 0.653); */
     border-radius: 10px;
     /* box-shadow: rgba(2, 165, 125, 0.653) 0px 0px 0px 3px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -829,7 +852,8 @@ html,body{
     position: relative;
     overflow: hidden;
     height: 14rem;
-    border-radius: 8px 8px 0px 0px;
+    border: 5px solid white;
+    
 }
 
 .card1_image{
@@ -838,17 +862,19 @@ html,body{
     position: absolute;
     height: 100%;
     width: 100%;
+    border-radius: 7px;
 }
 
 .card1_titleBox{
     display: flex;
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1.1rem;
 }
 
 .card1:hover .card1_image{
     transform: scale(1.2);
     transition-duration: 150ms;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .card1_title{
@@ -903,7 +929,7 @@ html,body{
 }
 
 .info_data span:nth-child(1){
-    color: #00a1ab;
+    color: #252525;
     font-weight: 800;
 }
 
@@ -912,11 +938,19 @@ html,body{
     /* font-weight: 800; */
 }
 
+.tag_div{
+    margin-top: 9px;
+    position: relative;
+    /* bottom: 2px; */
+    /* margin: 0 auto; */
+}
+
 .project_tag{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     border: 1px solid black;
-    border-radius: 2px;
-    padding: 5px 10px;
+    border-radius: 4px;
+    padding: 6px 10px;
+    
 }
 
 
