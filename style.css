@@ -1108,3 +1108,319 @@ footer{
     bottom: 94px;
 
 }
+
+
+
+
+
+
+
+/* ----------------------------------- Content Section ------------------------------------------------ */
+
+
+
+.antialiased {
+    padding: 70px;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Hero Section */
+/* .hero-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url('https://placehold.co/1200x600/E5E7EB/1F2937?text=Hero+Section+Background');
+    background-size: cover;
+    background-position: center;
+    
+}
+@media (min-width: 768px) {
+    .hero-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 640px) {
+    .hero-card {
+        padding: 2.5rem;
+    }
+}
+
+.profile-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 9999px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+@media (min-width: 768px) {
+    .profile-img {
+        width: 10rem;
+        height: 10rem;
+    }
+} */
+
+
+
+.main-content h1{
+    font-size: 2.4rem;
+    text-align: center;
+    color: #00a1ab;
+    margin-bottom: 10px;
+
+}
+
+.main-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+@media (min-width: 640px) {
+    .main-title {
+        font-size: 3rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #4B5563;
+    font-weight: 500;
+}
+@media (min-width: 768px) {
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00C6FF, #0072FF);
+    color: #fff;
+}
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: #1F2937;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: #374151;
+}
+
+/* General Card and Content Styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.about-container {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-card {
+    padding: 2rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .about-card {
+        padding: 3rem;
+    }
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #4B5563;
+    line-height: 1.75;
+}
+
+.content-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+    .content-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .content-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.content-card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.content-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #1F2937;
+    text-align: center;
+}
+
+.content-desc {
+    font-size: 0.875rem;
+    color: #6B7280;
+    text-align: center;
+}
+
+.content-grid-small {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+    .content-grid-small {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .content-grid-small {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.content-card-small {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img-small {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-title-small {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1F2937;
+    text-align: center;
+}
+
+.content-desc-small {
+    font-size: 0.75rem;
+    color: #6B7280;
+    text-align: center;
+}
+
+.content-grid-small-cols {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+    .content-grid-small-cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .content-grid-small-cols {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.linkedin-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linkedin-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1F2937;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-desc {
+    font-size: 0.875rem;
+    color: #4B5563;
+    margin-bottom: 1rem;
+}
+
+.linkedin-date {
+    font-size: 0.75rem;
+    color: #9CA3AF;
+}
